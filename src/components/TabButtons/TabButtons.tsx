@@ -24,7 +24,7 @@ function TabButtons() {
   }
 
   return (
-    <div className='absolute -bottom-20 w-full flex justify-center gap-4 shadow-md p-4 rounded text-sm text-very-dark-grayish-blue-lt font-medium'>
+    <div className='absolute left-0 -bottom-20 w-full flex justify-center gap-4 shadow-md p-4 rounded text-sm text-very-dark-grayish-blue-lt font-medium bg-white lg:static lg:shadow-none lg:w-fit lg:p-0'>
       <button
         onClick={tabs['all']}
         className={`${tab === 'all' && 'text-bright-blue font-bold'}`}
@@ -43,7 +43,7 @@ function TabButtons() {
       >
         Completed
       </button>
-      <p className='absolute -bottom-16 text-dark-grayish-blue-lt'>
+      <p className='absolute left-0 text-center w-full -bottom-16 text-dark-grayish-blue-lt'>
         Drag and drop to reorder list
       </p>
     </div>

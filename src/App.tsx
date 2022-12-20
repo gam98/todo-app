@@ -7,8 +7,8 @@ import TabButtons from './components/TabButtons/TabButtons'
 
 function App() {
   return (
-    <div className='bg-bg-mobile-light'>
-      <div className='flex items-center justify-between w-10/12 mx-auto mb-8 pt-8'>
+    <div className='bg-bg-mobile-light bg-cover md:bg-bg-desktop-light'>
+      <div className='flex items-center justify-between w-10/12 mx-auto mb-8 pt-8 lg:w-2/5'>
         <h1 className='text-3xl font-bold uppercase tracking-custom text-very-light-gray-lt'>
           todo
         </h1>
@@ -16,15 +16,15 @@ function App() {
           <img src={IconMoon} alt='' aria-hidden='true' className='block' />
         </button>
       </div>
-      <div className='w-10/12 mx-auto pb-10 relative'>
+      <div className='w-10/12 mx-auto pb-10 relative lg:w-2/5'>
         <Form />
         <div className='bg-white absolute w-full translate-y-4 rounded shadow-md'>
           <Todos />
-          <div className='flex justify-between p-4 text-dark-grayish-blue-lt text-sm'>
+          <div className='flex justify-between p-4 text-dark-grayish-blue-lt text-sm lg:items-center'>
             <ItemsLeft />
+            <TabButtons />
             <ClearCompletedButton />
           </div>
-          <TabButtons />
         </div>
       </div>
     </div>
