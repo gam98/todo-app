@@ -1,13 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundImage: {
         'check-background':
           'linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%))',
         'bg-desktop-light': "url('/assets/bg-desktop-light.jpg')",
-        'bg-mobile-light': "url('/assets/bg-mobile-light.jpg')"
+        'bg-mobile-light': "url('/assets/bg-mobile-light.jpg')",
+        'bg-desktop-dark': "url('/assets/bg-desktop-dark.jpg')",
+        'bg-mobile-dark': "url('/assets/bg-mobile-dark.jpg')"
       }
     },
     letterSpacing: {

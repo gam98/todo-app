@@ -24,7 +24,7 @@ function TabButtons() {
   }
 
   return (
-    <div className='absolute left-0 -bottom-20 w-full flex justify-center gap-4 shadow-md p-4 rounded text-sm text-very-dark-grayish-blue-lt font-medium bg-white lg:static lg:shadow-none lg:w-fit lg:p-0'>
+    <div className='absolute left-0 -bottom-20 w-full flex justify-center gap-4 shadow-md p-4 rounded text-sm text-very-dark-grayish-blue-lt font-medium bg-white lg:static lg:shadow-none lg:w-fit lg:p-0 dark:bg-very-dark-desaturated-blue-dt'>
       <button
         onClick={tabs['all']}
         className={`${tab === 'all' && 'text-bright-blue font-bold'}`}

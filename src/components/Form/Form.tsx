@@ -17,13 +17,13 @@ function Form() {
   return (
     <form
       onSubmit={e => handleSubmit(e)}
-      className='flex items-center gap-4 rounded bg-white p-4'
+      className='flex items-center gap-4 rounded bg-white p-4 dark:bg-very-dark-desaturated-blue-dt'
     >
-      <span className='block w-6 h-6 border border-dark-grayish-blue-lt rounded-full'></span>
+      <span className='block w-6 h-6 border border-dark-grayish-blue-lt rounded-full '></span>
       <input
         type='text'
         placeholder='Create a new todo...'
-        className='outline-none grow'
+        className='outline-none grow dark:bg-very-dark-desaturated-blue-dt dark:text-white'
         value={todo}
         onChange={e => handleChange(e)}
       />
