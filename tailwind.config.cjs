@@ -5,8 +5,13 @@ module.exports = {
     extend: {
       backgroundImage: {
         'check-background':
-          'linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%))'
+          'linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%))',
+        'bg-desktop-light': "url('/assets/bg-desktop-light.jpg')",
+        'bg-mobile-light': "url('/assets/bg-mobile-light.jpg')"
       }
+    },
+    letterSpacing: {
+      custom: '.7rem'
     },
     fontFamily: {
       'josefin-sans': ['Josefin Sans']
@@ -14,6 +19,7 @@ module.exports = {
     colors: {
       // Primary
       'bright-blue': 'hsl(220, 98%, 61%)',
+      white: 'hsl(0, 0%, 100%)',
       // Light Theme
       'very-light-gray-lt': 'hsl(0, 0%, 98%)',
       'very-light-grayish-blue-lt': 'hsl(236, 33%, 92%)',
