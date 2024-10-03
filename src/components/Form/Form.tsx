@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import React, { useContext, useState } from 'react'
 import { TodoContext } from '../../context/TodoContext'
 
@@ -10,7 +11,7 @@ function Form() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setTodos([...todos, { id: crypto.randomUUID(), task: todo, done: false }])
+    setTodos([...todos, { id: uuidv4(), task: todo, done: false }])
     setTodo('')
   }
 
